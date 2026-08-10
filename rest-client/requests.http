@@ -8,9 +8,8 @@ Content-Type: application/json
 {
   "email": "user@email.com",
   "password": "1",
-  "chave-injection": "nao deveria aparecer"
 }
 
 ### Read one user
 # @name readOneUser
-GET {{baseUrl}}/user/123a
+GET {{baseUrl}}/user/123
