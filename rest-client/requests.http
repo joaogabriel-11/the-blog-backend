@@ -45,6 +45,17 @@ Content-Type: application/json
 Authorization: Bearer {{jwtToken}}
 
 {
-  "currentPassword": "123456",
+  "currentPassword": "1234567",
   "newPassword": "123456"
 }
+
+### Read One User
+# @name readOneUser
+GET {{baseUrl}}/user/me
+Authorization: Bearer {{jwtToken}}
+
+### Delete One User
+# @name deleteOneUser
+DELETE {{baseUrl}}/user/me
+Authorization: Bearer {{jwtToken}}
+
