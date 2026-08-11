@@ -37,3 +37,14 @@ Authorization: Bearer {{jwtToken}}
   "name": "João",
   "email": "joao@gmail.com"
 }
+
+### Update User Password
+# @name updateUserPassword
+PATCH {{baseUrl}}/user/me/password
+Content-Type: application/json
+Authorization: Bearer {{jwtToken}}
+
+{
+  "currentPassword": "123456",
+  "newPassword": "123456"
+}
